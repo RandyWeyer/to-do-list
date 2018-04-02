@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     var newTask = new taskItem(userTaskInput, userDescriptionInput);
 
-    $("ul#tasks").append("<li id='" + newTask.name + "'><span class='tasks col-md-6'>" + newTask.name + "</span><button class='btn " + newTask.name + "'>Remove</button></li>");
+    $("ul#tasks").append("<li id='" + newTask.name + "'><span class='tasks col-md-6'>" + newTask.name + "</span><button class='btn btn-danger " + newTask.name + "'>Remove</button></li>");
 
     $("button." + newTask.name).last().click(function() { //VALUABLE
       $(this).parent().remove();
